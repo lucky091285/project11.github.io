@@ -158,7 +158,8 @@ class Api {
   }
   
   }
-
+  // так не красиво делать, имеется ввиду передавать конфигурационные переметры сразу, я о 'http://praktikum.tk'
+  // вынесите отдельно 'http://praktikum.tk', 'cohort1', '54bc3077-f332-488b-8fa2-e6f5fbfbe80e'
   const api = new Api({
     baseUrl: 'http://praktikum.tk',
     cohortID: 'cohort1',
