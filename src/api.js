@@ -160,7 +160,7 @@ class Api {
   }
 
   const api = new Api({
-    baseUrl: 'http://praktikum.tk',
+    baseUrl: 'https://praktikum.tk',
     cohortID: 'cohort1',
     headers: {
       authorization: '54bc3077-f332-488b-8fa2-e6f5fbfbe80e',
