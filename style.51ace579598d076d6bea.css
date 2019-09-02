@@ -352,7 +352,7 @@ template {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
-  src: url(9b0077c44069dae0d437ac9916d1d051.woff2) format("woff2");
+  src: url(./vendor/Inter-Regular.woff2) format("woff2");
 }
 
 
@@ -360,7 +360,7 @@ template {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 900;
-  src: url(2d38e5b941b55699e49a27dad4fec267.woff2) format("woff2");
+  src: url(./vendor/Inter-Black.woff2) format("woff2");
 }
 
 .root__section {
@@ -574,7 +574,7 @@ template {
 }*/
 
 .place-card__delete-icon {
-  background: url(83e46797a6336049e848391f616d8a89.svg) center no-repeat;
+  background: url(../images/trash-icon.svg) center no-repeat;
   background-color: transparent;
   border: none;
   width: 18px;
@@ -606,7 +606,7 @@ template {
 }
 
 .place-card__like-icon {
-  background: url(69b06a5c91517330144695523c450420.svg) center no-repeat;
+  background: url(../images/like-inactive.svg) center no-repeat;
   background-color: transparent;
   border: none;
   width: 21px;
@@ -616,7 +616,7 @@ template {
 }
 
 .place-card__like-icon_liked {
-  background-image: url(72e0c14b8d88b0f7bac0eaf733cb34db.svg);
+  background-image: url(../images/like-active.svg);
 }
 
 .place-card__like-icon:hover {
@@ -761,8 +761,4 @@ cursor: default;
   display: none;
 }
 
-body {
-  background-color: #000;
-}
-
-
+body{background-color:#000}
