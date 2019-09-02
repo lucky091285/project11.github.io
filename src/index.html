@@ -10,7 +10,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="../images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('../images/logo.svg')%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -43,14 +43,14 @@
 
     <div class="popup" id="bigImage">
         <div class="popup__content-image">
-          <img src="../images/close.svg" alt="" id="closeImage" class="popup__close">
+          <img src="<%=require('../images/close.svg')%>" alt="" id="closeImage" class="popup__close">
           <img src="https://images.unsplash.com/photo-1559596626-2816c9cf5af1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="popup__image" style="max-height: 80vh; max-width: 80vw">
         </div>
       </div>
 
     <div class="popup" id="place">
       <div class="popup__content">
-        <img src="../images/close.svg" alt="" id="closeCard" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="" id="closeCard" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form id="form1" class="popup__form" name="new">
             <div class="input-container">
@@ -67,7 +67,7 @@
     </div>
     <div class="popup" id="profile">
       <div class="popup__content">
-        <img src="../images/close.svg" alt="" id="closeProfile" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="" id="closeProfile" class="popup__close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form id="form2" class="popup__form" name="old">
             <div class="input-container">
@@ -84,7 +84,7 @@
     </div>
     <div class="popup" id="avatar">
       <div class="popup__content">
-        <img src="../images/close.svg" alt="" id="closeAvatar" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="" id="closeAvatar" class="popup__close">
         <h3 class="popup__title">Сменить аватар</h3>
         <form id="form3" class="popup__form" name="avat">
           <div class="input-container">
