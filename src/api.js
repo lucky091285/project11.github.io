@@ -161,7 +161,7 @@ class Api {
 
   let url;
 
-  if (NODE_ENV === 'production') {
+  if (NODE_ENV !== 'development') {
       url='https://praktikum.tk';
   } else {
       url='http://praktikum.tk';
