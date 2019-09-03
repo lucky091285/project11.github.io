@@ -159,8 +159,16 @@ class Api {
   
   }
 
+  let url;
+
+  if (NODE_ENV === 'production') {
+      url='https://praktikum.tk';
+  } else {
+      url='http://praktikum.tk';
+  }
+
   const api = new Api({
-    baseUrl: 'https://praktikum.tk',
+    baseUrl: url,
     cohortID: 'cohort1',
     headers: {
       authorization: '54bc3077-f332-488b-8fa2-e6f5fbfbe80e',

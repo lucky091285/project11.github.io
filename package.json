@@ -5,9 +5,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "rimraf dist && webpack --mode production",
-    "deploy": "gh-pages -d dist",
-    "dev": "webpack-dev-server --mode development --open --watch"
+    "build": "cross-env NODE_ENV=production  rimraf dist  && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -33,13 +33,15 @@
     "mini-css-extract-plugin": "^0.8.0",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
-    "webpack": "^4.39.2",
+    "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0",
+    "webpack-dev-server": "^3.7.1",
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.1.4"
+    "core-js": "^3.1.4",
+    "cross-env": "^5.2.1",
+    "webpack-dev-server": "^3.7.1"
   }
 }
