@@ -1,6 +1,6 @@
-import "../src/style.css";
+import "./style.css";
 import '../images/close.svg';
-import '../images/logo.svg';
+import './images/logo.svg';
 import {placesList} from './card.js';
 import {api, usName, usJob} from './api.js';
 import {handleValidate} from './validation.js';
